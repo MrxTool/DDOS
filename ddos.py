@@ -49,7 +49,7 @@ try:
     time.sleep(30)
     print('Result: ', url,Color.END)
   elif select_list > 5:
-    print('No package tools')
+    print('No package tools', Color.END)
   elif select_list == 4:
     time.sleep(3)
     IP = '192.168.1.9'
@@ -60,6 +60,7 @@ try:
     del(labelss)
     print(f'Ip address found: {IP}',Color.END)
   elif select_list == 5:
+    print(Color.END)
     exit()
   elif select_list == 2:
     urls = input('Enter url: ')
