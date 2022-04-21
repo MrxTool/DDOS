@@ -1,1 +1,3 @@
 # DDOS
+
+I made this tool for you guys ok bye...
