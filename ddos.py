@@ -1,6 +1,7 @@
 #usr/bin/python
 from datetime import datetime
 import time
+import socket
 dt = datetime.now()
 #LIST COLOR
 class Color:
@@ -52,13 +53,15 @@ try:
     print('No package tools', Color.END)
   elif select_list == 4:
     time.sleep(3)
-    IP = '192.168.1.9'
     txt_ip = input('Enter website: ')
+    if txt_ip == '':
+      exit(Color.END)
+    IP = socket.gethostbyname(txt_ip)
     labelss = 'Search: '
-    print(labelss, txt_ip)
+    print(labelss+txt_ip)
     time.sleep(10)
     del(labelss)
-    print(f'Ip address found: {IP}',Color.END)
+    print(f'Ip address found: ({IP})',Color.END)
   elif select_list == 5:
     print(Color.END)
     exit()
