@@ -1,13 +1,14 @@
 #usr/bin/python
 from datetime import datetime
 import time
-import socket
+import socket             
+import pyfiglet as tls
 dt = datetime.now()
 #LIST COLOR
 class Color:
-   PURPLE = '\033[95m'
+   PURPLE = '\033[95m'                  
    CYAN = '\033[96m'
-   DARKCYAN = '\033[36m'
+   DARKCYAN = '\033[36m'                
    BLUE = '\033[94m'
    GREEN = '\033[92m'
    YELLOW = '\033[93m'
@@ -17,7 +18,7 @@ class Color:
    END = '\033[0m'
 print(Color.GREEN+'#' *50)
 print('\n')
-print('                  HACKING TOLLS')
+print(tls.figlet_format('        CRYPTX'))
 print('\n')
 print('#' *50)
 print('\n')
